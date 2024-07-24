@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface ProjectCardProps {
     title: string;
     description:string;
@@ -10,7 +12,7 @@ interface ProjectCardProps {
 export function ProjectCard({title,description,imageUrl,projectUrl}:ProjectCardProps){
     return (
       <div>
-        <img src={imageUrl} alt={title} />
+        <Image src={imageUrl} alt={title} />
         <div>
           <h3>{title}</h3>
           <p>{description}</p>
