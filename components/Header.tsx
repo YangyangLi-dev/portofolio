@@ -1,8 +1,10 @@
 import Link from "next/link";
+import { ModeToggle } from "./ModeToggle";
 
 export function Header() {
   return (
     <header className="bg-gray-800 text-white">
+      <ModeToggle/>
       <nav className="container mx-autp px-4 py-4">
         <ul className="flex space-x-4">
           <li>
